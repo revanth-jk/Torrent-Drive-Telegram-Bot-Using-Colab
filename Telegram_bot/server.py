@@ -7,7 +7,7 @@ import datetime
 ses = lt.session()
 ses.listen_on(6881, 6891)
 params = {
-    'save_path': '/content/drive/My Drive/Torrent/',
+    'save_path': '/content/drive/Shared drives/Movies/New Upload/',
     'storage_mode': lt.storage_mode_t(2),
     'paused': False,
     'auto_managed': True,
@@ -49,7 +49,7 @@ def make_reply(msg):
         print("Elapsed Time: ",int((end-begin)//60),"min :", int((end-begin)%60), "sec")
 
         print(datetime.datetime.now())
-        reply='Download Finished You can find downloaded file @ https://drive.google.com/drive/folders/1OXqhU4UX0e_eEcQME6ZG_GFB03ioknjb?usp=sharing'
+        reply='Download Finished'
 
     return reply
 
